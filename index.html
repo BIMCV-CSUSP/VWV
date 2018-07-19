@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head style="min-height: 0px;">
+    <title>Title of the document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <link rel="stylesheet" type="text/css" href="libs/papaya/papaya.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/papaya/papaya.js"></script>
+
+    <!-- Load c3.css -->
+    <link href="libs/c3/c3.min.css" rel="stylesheet">
+
+    <!-- Load d3.js and c3.js -->
+    <script src="libs/d3/d3.min.js" charset="utf-8"></script>
+    <script src="libs/c3/c3.min.js"></script>
+
+    <script type="text/javascript" src="index.js"></script>
+
+    <script type="text/javascript">
+        var params = [];
+        params["kioskMode"] = true;
+        params["noNewFiles"] = true;
+        params["showControls"] = false;
+        params["showControlBar"] = false;
+        params["showImageButtons"] = false;
+        params["expandable"] = false;
+        params["images"] = ["avg152T1_LR_nifti.nii.gz"];
+
+    </script>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="w3.css">
+</head>
+
+<body class="vertical-layout" style="min-height: 0px;" onload="load()">
+    <div class="dark header">
+        <h1>Header</h1>
+    </div>
+    <div class="horizontal-layout body_content" style="min-height: 0px;">
+
+        <div class="body_content border-r" style="min-height: 0px;overflow: auto;">
+            <div id="listing" style="min-height: 0px;">
+                <div class="full_width text_center"><h2>METADATA</h2></div>
+                <div class="list_column" style="min-height: 0px;">
+                    <button id="1" class="none button" onClick="show_charts(this.id)"> asdfdghj</button>
+                    <button id="2" class="none button">adsfdhsgm </button>
+                    <button id="3" class="none button"> sfadshjklñlkjhjghfgds</button>
+                    <button id="4" class="none button">dfggggggggggggggggggggggggggggggg </button>
+
+
+                </div>
+            </div>
+            <div id="charts" class="none body_content vertical-layout">
+                <div class="vertical-centered distributed horizontal-layout">
+                    <a onclick="close_charts()" style="cursor: pointer;"><h2 style="margin: 5px 0px 0px 15px;"><img src="arrow.png" class="as-char"></h2></a>
+                    <h2>ID PLACEHOLDER</h2>
+                    <h2><div style="width:1em;"></div></h2>
+                </div>
+                <div id="columnChart" class="charts">
+
+                </div>
+                <div id="databaseChart" class="charts" >
+
+                </div>
+            </div>
+        </div>
+
+        <div class="full_center body_content">
+            <div class=" papaya" data-params="params"></div>
+        <div>
+
+    </div>
+</body>
+</html>
